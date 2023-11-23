@@ -1,0 +1,157 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  &__logo {
+    margin: 0;
+  }
+  &__nav {
+    display: flex;
+    list-style-type: none;
+    gap: 32px;
+  }
+  &__nav a {
+    color: $white;
+  }
+}
+
+header {
+  background: linear-gradient(45deg, #1b13a6 49.59%, #443cdf 88.57%), #fff;
+  color: $white;
+  padding-bottom: 110px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  .hero_left {
+    width: 586px;
+    color: #fff;
+
+    h1 {
+      font-size: 56px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 70px;
+      letter-spacing: -1.12px;
+    }
+
+    p {
+      color: #b6b3eb;
+
+      font-family: Plus Jakarta Sans;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    button {
+      margin-right: 32.36px;
+    }
+
+    .info p {
+      font-size: 16px;
+    }
+  }
+}
+
+.hamburger {
+  display: none;
+}
+
+.info {
+  display: flex;
+  gap: 80px;
+}
+
+.hero_phone {
+  max-width: 238.29px;
+}
+
+.mastercard {
+  max-width: 342px;
+  position: relative;
+  top: -178px;
+  left: -80px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero {
+    margin-left: 3.3vw;
+  }
+
+  .hero_phone {
+    margin-top: 48px;
+    max-width: 238.296px;
+  }
+
+  .mastercard {
+    position: relative;
+    top: -380px;
+    left: 140px;
+  }
+
+  header {
+    padding-bottom: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    background-color: black;
+  }
+
+  .hero {
+    margin-left: 8vw;
+  }
+
+  .header .header__nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    margin-top: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+
+  .hero .hero_left h1 {
+    width: 352px;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+  }
+
+  hero .hero_left p {
+    width: 382px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  button {
+    width: 140px;
+  }
+
+  .mastercard {
+    position: relative;
+    top: -250px;
+    left: 80px;
+  }
+
+  .hero {
+    display: block;
+  }
+
+  .hero_phone {
+    margin-left: 300px;
+  }
+
+  header {
+    padding-bottom: 0px;
+  }
+}
