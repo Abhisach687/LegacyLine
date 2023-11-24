@@ -860,6 +860,22 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+  .newsletter {
+    background: unset;
+  }
+  .newsletter h1,
+  .newsletter p {
+    color: #1d1c31;
+  }
+  #email {
+    background-color: unset;
+    margin-bottom: 20px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

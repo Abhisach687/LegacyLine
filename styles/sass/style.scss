@@ -427,4 +427,23 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+
+  .newsletter {
+    background: unset;
+    h1,
+    p {
+      color: $secondary-color;
+    }
+  }
+
+  #email {
+    background-color: unset;
+    margin-bottom: 20px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
