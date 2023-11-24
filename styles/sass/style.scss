@@ -330,6 +330,63 @@ footer {
   }
 }
 
+@media (max-width: 767px) {
+  .kb_container {
+    h1 {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 52px; /* 260% */
+      letter-spacing: -0.4px;
+    }
+  }
+
+  .card_flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cardflex_card {
+    width: 304px;
+    border-radius: 8px;
+    box-shadow: 0px 24px 64px -12px rgba(26, 24, 65, 0.06);
+  }
+
+  .kb_banner_card {
+    top: 0;
+    left: 0;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 31px;
+  }
+
+  p {
+    width: 320px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  .playstore_download {
+    width: 135px;
+  }
+
+  .appstore_download {
+    width: 120px;
+  }
+
+  .separator {
+    display: none;
+  }
+}
+
 // footer section
 .footer_hr {
   background: #dadaea;
@@ -363,4 +420,11 @@ footer {
 
 .about_us_card .nicole {
   margin-left: 0;
+}
+
+@media (max-width: 767px) {
+  .footer_top {
+    flex-direction: column;
+    align-items: center;
+  }
 }
