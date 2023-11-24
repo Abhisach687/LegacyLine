@@ -97,10 +97,6 @@ header {
 }
 
 @media (max-width: 767px) {
-  .container {
-    background-color: black;
-  }
-
   .hero {
     margin-left: 8vw;
   }
@@ -131,6 +127,10 @@ header {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+  }
+
+  .hero_right {
+    max-width: 200px;
   }
 
   button {

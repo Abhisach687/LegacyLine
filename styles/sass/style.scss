@@ -7,3 +7,226 @@
 @import "partials/utils";
 @import "partials/button";
 @import "partials/header";
+
+// Variables
+$primary-color: #5f58d6;
+$secondary-color: #1d1c31;
+$white: #ffffff;
+$shadow-color: rgba(26, 24, 65, 0.06);
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+//strip section
+.strip {
+  display: flex;
+  justify-content: space-around;
+  background-color: $primary-color;
+  padding: 8px 0;
+
+  @media (max-width: 767px) {
+    svg {
+      width: 80px;
+    }
+  }
+}
+
+//2nd Section
+.kb_container {
+  padding-bottom: 128px;
+
+  h1 {
+    margin-left: 220px;
+    color: $secondary-color;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: -0.8px;
+  }
+}
+
+.card_flex {
+  @include flex-center;
+  gap: 40px;
+}
+
+.cardflex_card {
+  border-radius: 8px;
+  background: $white;
+  box-shadow: 0px 24px 64px -12px $shadow-color;
+  width: 20vw;
+  padding: 28px;
+
+  svg {
+    width: 80px;
+  }
+
+  h3 {
+    width: 182px;
+    color: $secondary-color;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  p {
+    color: rgba(29, 28, 49, 0.6);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  a {
+    margin-left: 98px;
+  }
+
+  a svg {
+    margin-left: -20px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    a {
+      margin-left: 32px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 108px;
+    padding: 112px;
+
+    a {
+      width: 16px;
+      margin-left: -90px;
+    }
+  }
+}
+
+.kb_banner {
+  @include flex-center;
+  flex-wrap: wrap;
+  max-width: 1080px;
+  margin-left: 8vw;
+  margin-bottom: 0;
+}
+
+.kb_banner_img img {
+  width: 1168px;
+}
+
+.kb_banner_card {
+  @include flex-center;
+  width: 688px;
+  padding: 52px;
+  align-items: flex-end;
+  align-content: flex-end;
+  gap: 40px 24px;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  box-shadow: 0px 24px 64px -12px $shadow-color;
+  background: $white;
+  position: relative;
+  top: -570px;
+  left: 420px;
+
+  h3 {
+    color: $secondary-color;
+    font-family: Plus Jakarta Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: -0.8px;
+  }
+
+  p {
+    width: 584px;
+    color: rgba(29, 28, 49, 0.6);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+  }
+}
+
+.playstore_download {
+  width: 175.5px;
+}
+
+.appstore_download {
+  width: 156px;
+}
+
+.about_us {
+  margin-top: -500px;
+  margin-left: 98px;
+
+  h1 {
+    color: $secondary-color;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px; /* 130% */
+    letter-spacing: -0.8px;
+  }
+}
+
+.about_us_cards {
+  @include flex-center;
+  gap: 40px;
+}
+
+.about_us_card {
+  width: 448px;
+  border: 1px solid rgb(250, 245, 245);
+  border-radius: 8px;
+  background: $white;
+  padding: 20px;
+
+  hr {
+    border: 1px solid rgb(250, 245, 245);
+  }
+
+  span {
+    color: $secondary-color;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 135px;
+  }
+
+  .date,
+  .stars {
+    margin-left: 138px;
+  }
+}
+
+.client_info {
+  margin-top: -120px;
+}
+
+.about_us_card_blue {
+  background-color: #4f47e8;
+  color: $white;
+  span {
+    color: $white;
+  }
+}
+
+.separator {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+footer {
+  width: 100vw;
+  height: 20vh;
+}
