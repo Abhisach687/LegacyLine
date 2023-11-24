@@ -308,6 +308,29 @@ footer {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about_us_cards {
+    margin-left: -88px;
+  }
+
+  .about_us_card span .nicole {
+    margin-left: 136px;
+  }
+
+  .kb_banner_card {
+    display: flex;
+    width: 528px;
+    padding: 36px;
+    align-items: flex-end;
+    align-content: flex-end;
+    gap: 32px 24px;
+    flex-wrap: wrap;
+    top: -484px;
+    left: 151px;
+  }
+}
+
+// footer section
 .footer_hr {
   background: #dadaea;
   width: 1408px;
@@ -336,4 +359,8 @@ footer {
   svg {
     cursor: pointer;
   }
+}
+
+.about_us_card .nicole {
+  margin-left: 0;
 }
